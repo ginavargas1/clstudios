@@ -5,18 +5,19 @@ import Experience from "./components/Experience";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer   from "./components/Footer";
+import {BrowserRouter as Router} from "react-router-dom"
 
 
 function App() {
     return (
-        <div>
+        <Router>
             <Navbar />
             <Landing />
             <Experience />
             <Services />
             <Contact />
             <Footer />
-        </div>
+        </Router>
     )
 }
 
