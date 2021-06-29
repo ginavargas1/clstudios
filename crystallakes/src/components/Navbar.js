@@ -5,12 +5,12 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="max-width">
-                <div className="logo"><a href="#">Crystal Lakes Studio</a></div>
+                <div className="logo"><a href="#crystal-lakes-studio">Crystal Lakes Studio</a></div>
                 <ul className="tabs">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Experiences</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact Info</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#contact-info">Contact Info</a></li>
                 </ul>
             </div>
         </nav>
