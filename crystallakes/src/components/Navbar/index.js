@@ -6,9 +6,15 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo>
-                        Crystal Lakes Studio
-                    </NavLogo>
+                    <NavLogo to='/'>Crystal Lakes Studio</NavLogo>
+                    <MobileIcon>
+                        <FaBars />
+                    </MobileIcon>
+                    <NavMenu>
+                        <NavItem>
+                            
+                        </NavItem>
+                    </NavMenu>
                 </NavbarContainer>
             </Nav>
         </>
