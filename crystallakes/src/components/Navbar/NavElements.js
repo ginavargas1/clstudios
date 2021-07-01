@@ -39,3 +39,6 @@ export const NavLogo = styled(LinkRouter)`
     font-weight: bold;
     text-decoration: none;
 `;
+
+
+// need to add media querie icon to navbar
