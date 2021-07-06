@@ -40,5 +40,24 @@ export const NavLogo = styled(LinkRouter)`
     text-decoration: none;
 `;
 
+export const MobileIcon = styled.div`
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+    }
+`
+
+export const NavMenu= styles.ul`
+    display: flex;
+    align-item: center;
+`
 
 // need to add media querie icon to navbar
