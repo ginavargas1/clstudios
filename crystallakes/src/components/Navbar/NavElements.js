@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom"
-// import { Link as LinkS } from "react-scroll"
+import { Link as LinkScroll } from "react-scroll"
 
 export const Nav = styled.nav`
     background: #000;
@@ -53,11 +53,37 @@ export const MobileIcon = styled.div`
         cursor: pointer;
         color: #fff;
     }
-`
+`;
 
-export const NavMenu= styles.ul`
+export const NavMenu= styled.ul`
     display: flex;
     align-item: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const NavItem= styled.li`
+    height: 80px;
+`;
+
+export const NavLinks = styled(LinkScroll)`
+    color: #fff;
+    display: flex;
+    align-item: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+
+    &.active {
+        border-bottom: 3ppx solid #01bf71;
+    }
 `
+
 
 // need to add media querie icon to navbar
